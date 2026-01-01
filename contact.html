@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Contact Silent Byte - Get in touch with our team for cybersecurity, web development, and cloud solutions inquiries.">
+    <meta name="keywords" content="contact silent byte, cybersecurity consultation, get in touch, technology partner">
+    <meta name="author" content="Silent Byte">
+
+    <title>Contact Us | Silent Byte</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="logo.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <!-- Loading Screen -->
+    <div class="loader">
+        <div class="loader-spinner"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="navbar-brand">
+                <img src="logo.png" alt="Silent Byte Logo" class="navbar-logo">
+                <span class="navbar-name">Silent<span>Byte</span></span>
+            </a>
+
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+                <li><a href="contact.html" class="nav-link active">Contact</a></li>
+                <li><a href="contact.html" class="btn btn-primary btn-sm">Get Started</a></li>
+            </ul>
+
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header">
+        <div class="container">
+            <h1 class="page-title fade-in">Get in <span class="text-gradient">Touch</span></h1>
+            <div class="page-breadcrumb fade-in">
+                <a href="index.html">Home</a>
+                <span>/</span>
+                <span>Contact</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Contact Section -->
+    <section class="section">
+        <div class="container">
+            <div class="grid grid-cols-2 gap-8">
+                <!-- Contact Form -->
+                <div class="fade-in-left">
+                    <span class="section-label">Send a Message</span>
+                    <h2 style="font-size: var(--text-3xl); margin-bottom: var(--space-6);">Let's Start a <span
+                            class="text-gradient">Conversation</span></h2>
+
+                    <form data-validate id="contact-form">
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="form-group">
+                                <label for="firstName" class="form-label">First Name *</label>
+                                <input type="text" id="firstName" name="firstName" class="form-control"
+                                    placeholder="John" required>
+                                <p class="form-error"></p>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="lastName" class="form-label">Last Name *</label>
+                                <input type="text" id="lastName" name="lastName" class="form-control" placeholder="Doe"
+                                    required>
+                                <p class="form-error"></p>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email Address *</label>
+                            <input type="email" id="email" name="email" class="form-control"
+                                placeholder="john@example.com" required>
+                            <p class="form-error"></p>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="company" class="form-label">Company</label>
+                            <input type="text" id="company" name="company" class="form-control"
+                                placeholder="Your Company">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="service" class="form-label">Service Interested In</label>
+                            <select id="service" name="service" class="form-control">
+                                <option value="">Select a service...</option>
+                                <option value="cybersecurity">Cybersecurity</option>
+                                <option value="web-development">Web Development</option>
+                                <option value="cloud-solutions">Cloud Solutions</option>
+                                <option value="ai-ml">AI & Machine Learning</option>
+                                <option value="consulting">Security Consulting</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="budget" class="form-label">Budget Range</label>
+                            <select id="budget" name="budget" class="form-control">
+                                <option value="">Select budget range...</option>
+                                <option value="5k-10k">$5,000 - $10,000</option>
+                                <option value="10k-25k">$10,000 - $25,000</option>
+                                <option value="25k-50k">$25,000 - $50,000</option>
+                                <option value="50k-100k">$50,000 - $100,000</option>
+                                <option value="100k+">$100,000+</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message" class="form-label">Message *</label>
+                            <textarea id="message" name="message" class="form-control"
+                                placeholder="Tell us about your project..." required data-min-length="20"></textarea>
+                            <p class="form-error"></p>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-lg" style="width: 100%;">Send Message</button>
+                    </form>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="fade-in-right">
+                    <div class="card" style="margin-bottom: var(--space-8);">
+                        <h3 style="font-size: var(--text-xl); margin-bottom: var(--space-6);">Contact Information</h3>
+
+                        <div class="contact-info">
+                            <div class="contact-item">
+                                <div class="contact-icon">📧</div>
+                                <div>
+                                    <p class="contact-label">Email</p>
+                                    <p class="contact-value">hello@silentbyte.com</p>
+                                </div>
+                            </div>
+
+                            <div class="contact-item">
+                                <div class="contact-icon">📞</div>
+                                <div>
+                                    <p class="contact-label">Phone</p>
+                                    <p class="contact-value">+1 (555) 123-4567</p>
+                                </div>
+                            </div>
+
+                            <div class="contact-item">
+                                <div class="contact-icon">📍</div>
+                                <div>
+                                    <p class="contact-label">Headquarters</p>
+                                    <p class="contact-value">123 Tech Boulevard<br>San Francisco, CA 94105</p>
+                                </div>
+                            </div>
+
+                            <div class="contact-item">
+                                <div class="contact-icon">🕐</div>
+                                <div>
+                                    <p class="contact-label">Business Hours</p>
+                                    <p class="contact-value">Mon - Fri: 9:00 AM - 6:00 PM PST<br>24/7 Emergency Support
+                                        Available</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Map Placeholder -->
+                    <div class="card" style="padding: 0; overflow: hidden; aspect-ratio: 16/9;">
+                        <div
+                            style="width: 100%; height: 100%; background: var(--gradient-glow); display: flex; align-items: center; justify-content: center; flex-direction: column;">
+                            <div style="font-size: 3rem; margin-bottom: var(--space-4);">🗺️</div>
+                            <p style="color: var(--color-text-secondary);">San Francisco, CA</p>
+                            <p style="font-size: var(--text-sm); color: var(--color-text-muted);">Interactive map coming
+                                soon</p>
+                        </div>
+                    </div>
+
+                    <!-- Social Links -->
+                    <div class="card" style="margin-top: var(--space-8);">
+                        <h3 style="font-size: var(--text-lg); margin-bottom: var(--space-4);">Connect With Us</h3>
+                        <div class="footer-socials" style="justify-content: flex-start;">
+                            <a href="#" aria-label="Twitter"
+                                style="width: 50px; height: 50px; font-size: var(--text-xl);">𝕏</a>
+                            <a href="#" aria-label="LinkedIn"
+                                style="width: 50px; height: 50px; font-size: var(--text-xl);">in</a>
+                            <a href="#" aria-label="GitHub"
+                                style="width: 50px; height: 50px; font-size: var(--text-xl);">⌘</a>
+                            <a href="#" aria-label="Discord"
+                                style="width: 50px; height: 50px; font-size: var(--text-xl);">💬</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section" style="background: var(--color-bg-secondary);">
+        <div class="container">
+            <div class="section-header fade-in">
+                <span class="section-label">FAQ</span>
+                <h2 class="section-title">Frequently Asked <span class="text-gradient">Questions</span></h2>
+            </div>
+
+            <div class="container-sm">
+                <div class="faq-item fade-in delay-100">
+                    <div class="faq-question">
+                        <span>What services does Silent Byte offer?</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We offer comprehensive cybersecurity solutions, custom web development, cloud architecture
+                            and migration, AI/ML implementation, security consulting, and 24/7 monitoring and support
+                            services.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item fade-in delay-200">
+                    <div class="faq-question">
+                        <span>How long does a typical project take?</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Project timelines vary based on scope and complexity. Security audits typically take 2-4
+                            weeks, web development projects range from 6-16 weeks, and cloud migrations depend on
+                            infrastructure size. We provide detailed timelines during our initial consultation.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item fade-in delay-300">
+                    <div class="faq-question">
+                        <span>Do you offer ongoing support?</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes! We offer various support tiers including 24/7 monitoring, dedicated account managers,
+                            priority incident response, and continuous security updates. Our Professional and Enterprise
+                            plans include comprehensive support packages.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item fade-in delay-400">
+                    <div class="faq-question">
+                        <span>What industries do you serve?</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We serve clients across all industries, with particular expertise in financial services,
+                            healthcare, e-commerce, technology startups, gaming, and government sectors. Our solutions
+                            are tailored to meet industry-specific compliance requirements.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item fade-in delay-500">
+                    <div class="faq-question">
+                        <span>How do I get started?</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Simply fill out the contact form above or give us a call. We'll schedule a free consultation
+                            to understand your needs, assess your current situation, and provide a customized proposal
+                            with clear pricing and timelines.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section">
+        <div class="container">
+            <div class="cta-section fade-in">
+                <div class="cta-content">
+                    <h2 class="cta-title">Prefer to <span class="text-gradient">Schedule a Call</span>?</h2>
+                    <p class="cta-text">Book a free 30-minute consultation with our team to discuss your project in
+                        detail.</p>
+                    <a href="#" class="btn btn-primary btn-lg">Schedule Consultation</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <img src="logo.png" alt="Silent Byte">
+                        <span>Silent<span style="color: var(--color-primary);">Byte</span></span>
+                    </div>
+                    <p class="footer-desc">Protecting your digital future with cutting-edge cybersecurity solutions,
+                        innovative web development, and scalable cloud architecture.</p>
+                    <div class="footer-socials">
+                        <a href="#" aria-label="Twitter">𝕏</a>
+                        <a href="#" aria-label="LinkedIn">in</a>
+                        <a href="#" aria-label="GitHub">⌘</a>
+                        <a href="#" aria-label="Discord">💬</a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="footer-title">Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="services.html">Cybersecurity</a></li>
+                        <li><a href="services.html">Web Development</a></li>
+                        <li><a href="services.html">Cloud Solutions</a></li>
+                        <li><a href="services.html">AI & ML</a></li>
+                        <li><a href="services.html">Consulting</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="footer-title">Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="footer-title">Contact</h4>
+                    <ul class="footer-links">
+                        <li>📧 hello@silentbyte.com</li>
+                        <li>📞 +1 (555) 123-4567</li>
+                        <li>📍 San Francisco, CA</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="footer-copyright">© 2026 Silent Byte. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

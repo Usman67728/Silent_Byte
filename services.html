@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Silent Byte Services - Comprehensive cybersecurity, web development, cloud solutions, and AI services. Explore our full range of technology offerings.">
+    <meta name="keywords"
+        content="cybersecurity services, web development, cloud solutions, AI services, security consulting">
+    <meta name="author" content="Silent Byte">
+
+    <title>Services | Silent Byte</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="logo.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <!-- Loading Screen -->
+    <div class="loader">
+        <div class="loader-spinner"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="navbar-brand">
+                <img src="logo.png" alt="Silent Byte Logo" class="navbar-logo">
+                <span class="navbar-name">Silent<span>Byte</span></span>
+            </a>
+
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="services.html" class="nav-link active">Services</a></li>
+                <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li><a href="contact.html" class="btn btn-primary btn-sm">Get Started</a></li>
+            </ul>
+
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header">
+        <div class="container">
+            <h1 class="page-title fade-in">Our <span class="text-gradient">Services</span></h1>
+            <div class="page-breadcrumb fade-in">
+                <a href="index.html">Home</a>
+                <span>/</span>
+                <span>Services</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Services Grid -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header fade-in">
+                <span class="section-label">What We Offer</span>
+                <h2 class="section-title">Comprehensive <span class="text-gradient">Solutions</span></h2>
+                <p class="section-desc">From security audits to full-stack development, we provide end-to-end technology
+                    services tailored to your needs.</p>
+            </div>
+
+            <div class="grid grid-cols-3 gap-8">
+                <!-- Cybersecurity -->
+                <div class="card fade-in delay-100" id="cybersecurity">
+                    <div class="card-icon">🔐</div>
+                    <h3 class="card-title">Cybersecurity</h3>
+                    <p class="card-text">Protect your digital assets with our comprehensive security solutions.</p>
+                    <ul style="margin: var(--space-4) 0; color: var(--color-text-secondary);">
+                        <li style="padding: var(--space-2) 0; border-bottom: 1px solid var(--glass-border);">✓
+                            Penetration Testing</li>
+                        <li style="padding: var(--space-2) 0; border-bottom: 1px solid var(--glass-border);">✓
+                            Vulnerability Assessments</li>
+                        <li style="padding: var(--space-2) 0; border-bottom: 1px solid var(--glass-border);">✓ Security
+                            Audits</li>
+                        <li style="padding: var(--space-2) 0; border-bottom: 1px solid var(--glass-border);">✓ Incident
+                            Response</li>
+                        <li style="padding: var(--space-2) 0;">✓ Security Training</li>
+                    </ul>
+                    <a href="contact.html" class="btn btn-secondary" style="width: 100%;">Get Started</a>
+                </div>
+
+                <!-- Web Development -->
+                <div class="card fade-in delay-200" id="web-development">
+                    <div class="card-icon">💻</div>
+                    <h3 class="card-title">Web Development</h3>
+                    <p class="card-text">Custom web applications built with modern technologies and best practices.</p>
+                    <ul style="margin: var(--space-4) 0; color: var(--color-text-secondary);">
+                        <li style="padding: var(--space-2) 0; border-bottom: 1px solid var(--glass-border);">✓ Custom
+                            Web Apps</li>
+                        <li style="padding: var(--space-2) 0; border-bottom: 1px solid var(--glass-border);">✓
+                            E-commerce Solutions</li>
+                        <li style="padding: var(--space-2) 0; border-bottom: 1px solid var(--glass-border);">✓ API
+                            Development</li>
+                        <li style="padding: var(--space-2) 0; border-bottom: 1px solid var(--glass-border);">✓
+                            Progressive Web Apps</li>
+                        <li style="padding: var(--space-2) 0;">✓ CMS Integration</li>
+                    </ul>
+                    <a href="contact.html" class="btn btn-secondary" style="width: 100%;">Get Started</a>
+                </div>
+
+                <!-- Cloud Solutions -->
+                <div class="card fade-in delay-300" id="cloud-solutions">
+                    <div class="card-icon">☁️</div>
+                    <h3 class="card-title">Cloud Solutions</h3>
+                    <p class="card-text">Scalable cloud architecture designed for performance and reliability.</p>
+                    <ul style="margin: var(--space-4) 0; color: var(--color-text-secondary);">
+                        <li style="padding: var(--space-2) 0; border-bottom: 1px solid var(--glass-border);">✓ Cloud
+                            Migration</li>
+                        <li style="padding: var(--space-2) 0; border-bottom: 1px solid var(--glass-border);">✓
+                            AWS/Azure/GCP</li>
+                        <li style="padding: var(--space-2) 0; border-bottom: 1px solid var(--glass-border);">✓ DevOps &
+                            CI/CD</li>
+                        <li style="padding: var(--space-2) 0; border-bottom: 1px solid var(--glass-border);">✓
+                            Kubernetes</li>
+                        <li style="padding: var(--space-2) 0;">✓ Serverless Architecture</li>
+                    </ul>
+                    <a href="contact.html" class="btn btn-secondary" style="width: 100%;">Get Started</a>
+                </div>
+
+                <!-- AI & Machine Learning -->
+                <div class="card fade-in delay-100" id="ai-ml">
+                    <div class="card-icon">🤖</div>
+                    <h3 class="card-title">AI & Machine Learning</h3>
+                    <p class="card-text">Harness the power of AI to automate, predict, and innovate.</p>
+                    <ul style="margin: var(--space-4) 0; color: var(--color-text-secondary);">
+                        <li style="padding: var(--space-2) 0; border-bottom: 1px solid var(--glass-border);">✓
+                            Predictive Analytics</li>
+                        <li style="padding: var(--space-2) 0; border-bottom: 1px solid var(--glass-border);">✓ Natural
+                            Language Processing</li>
+                        <li style="padding: var(--space-2) 0; border-bottom: 1px solid var(--glass-border);">✓ Computer
+                            Vision</li>
+                        <li style="padding: var(--space-2) 0; border-bottom: 1px solid var(--glass-border);">✓ Chatbot
+                            Development</li>
+                        <li style="padding: var(--space-2) 0;">✓ Automated Threat Detection</li>
+                    </ul>
+                    <a href="contact.html" class="btn btn-secondary" style="width: 100%;">Get Started</a>
+                </div>
+
+                <!-- Security Consulting -->
+                <div class="card fade-in delay-200" id="consulting">
+                    <div class="card-icon">📊</div>
+                    <h3 class="card-title">Security Consulting</h3>
+                    <p class="card-text">Expert guidance to build a robust security strategy for your organization.</p>
+                    <ul style="margin: var(--space-4) 0; color: var(--color-text-secondary);">
+                        <li style="padding: var(--space-2) 0; border-bottom: 1px solid var(--glass-border);">✓ Risk
+                            Assessment</li>
+                        <li style="padding: var(--space-2) 0; border-bottom: 1px solid var(--glass-border);">✓
+                            Compliance (SOC2, ISO)</li>
+                        <li style="padding: var(--space-2) 0; border-bottom: 1px solid var(--glass-border);">✓ Security
+                            Architecture</li>
+                        <li style="padding: var(--space-2) 0; border-bottom: 1px solid var(--glass-border);">✓ Policy
+                            Development</li>
+                        <li style="padding: var(--space-2) 0;">✓ Executive Briefings</li>
+                    </ul>
+                    <a href="contact.html" class="btn btn-secondary" style="width: 100%;">Get Started</a>
+                </div>
+
+                <!-- 24/7 Support -->
+                <div class="card fade-in delay-300" id="support">
+                    <div class="card-icon">🛠️</div>
+                    <h3 class="card-title">24/7 Support</h3>
+                    <p class="card-text">Round-the-clock monitoring and support to keep your systems secure.</p>
+                    <ul style="margin: var(--space-4) 0; color: var(--color-text-secondary);">
+                        <li style="padding: var(--space-2) 0; border-bottom: 1px solid var(--glass-border);">✓ SOC
+                            Services</li>
+                        <li style="padding: var(--space-2) 0; border-bottom: 1px solid var(--glass-border);">✓ Real-time
+                            Monitoring</li>
+                        <li style="padding: var(--space-2) 0; border-bottom: 1px solid var(--glass-border);">✓ Incident
+                            Response</li>
+                        <li style="padding: var(--space-2) 0; border-bottom: 1px solid var(--glass-border);">✓ Threat
+                            Intelligence</li>
+                        <li style="padding: var(--space-2) 0;">✓ Dedicated Account Manager</li>
+                    </ul>
+                    <a href="contact.html" class="btn btn-secondary" style="width: 100%;">Get Started</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="section" style="background: var(--color-bg-secondary);">
+        <div class="container">
+            <div class="section-header fade-in">
+                <span class="section-label">Investment</span>
+                <h2 class="section-title">Flexible <span class="text-gradient">Pricing</span></h2>
+                <p class="section-desc">Choose a plan that fits your needs. All plans include our core security
+                    features.</p>
+            </div>
+
+            <div class="grid grid-cols-3 gap-8">
+                <!-- Starter Plan -->
+                <div class="card pricing-card fade-in delay-100">
+                    <h3 class="pricing-name">Starter</h3>
+                    <p style="color: var(--color-text-muted); margin-bottom: var(--space-4);">Perfect for small
+                        businesses</p>
+                    <div class="pricing-price">$999<span>/month</span></div>
+                    <ul class="pricing-features">
+                        <li>Basic Security Audit</li>
+                        <li>Vulnerability Scanning</li>
+                        <li>Monthly Reports</li>
+                        <li>Email Support</li>
+                        <li>Up to 5 Applications</li>
+                    </ul>
+                    <a href="contact.html" class="btn btn-secondary" style="width: 100%;">Choose Starter</a>
+                </div>
+
+                <!-- Professional Plan -->
+                <div class="card pricing-card featured fade-in delay-200">
+                    <h3 class="pricing-name">Professional</h3>
+                    <p style="color: var(--color-text-muted); margin-bottom: var(--space-4);">For growing organizations
+                    </p>
+                    <div class="pricing-price">$2,999<span>/month</span></div>
+                    <ul class="pricing-features">
+                        <li>Everything in Starter</li>
+                        <li>Penetration Testing</li>
+                        <li>24/7 Monitoring</li>
+                        <li>Priority Support</li>
+                        <li>Up to 20 Applications</li>
+                        <li>Compliance Assistance</li>
+                    </ul>
+                    <a href="contact.html" class="btn btn-primary" style="width: 100%;">Choose Professional</a>
+                </div>
+
+                <!-- Enterprise Plan -->
+                <div class="card pricing-card fade-in delay-300">
+                    <h3 class="pricing-name">Enterprise</h3>
+                    <p style="color: var(--color-text-muted); margin-bottom: var(--space-4);">For large organizations
+                    </p>
+                    <div class="pricing-price">Custom</div>
+                    <ul class="pricing-features">
+                        <li>Everything in Professional</li>
+                        <li>Dedicated Security Team</li>
+                        <li>Custom Integrations</li>
+                        <li>SLA Guarantees</li>
+                        <li>Unlimited Applications</li>
+                        <li>On-site Training</li>
+                    </ul>
+                    <a href="contact.html" class="btn btn-secondary" style="width: 100%;">Contact Sales</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header fade-in">
+                <span class="section-label">Our Process</span>
+                <h2 class="section-title">How We <span class="text-gradient">Work</span></h2>
+            </div>
+
+            <div class="grid grid-cols-4 gap-6">
+                <div class="card service-card fade-in delay-100" style="position: relative;">
+                    <div
+                        style="position: absolute; top: var(--space-4); left: var(--space-4); font-size: var(--text-3xl); font-weight: 800; color: var(--color-primary); opacity: 0.3;">
+                        01</div>
+                    <div class="card-icon" style="margin-top: var(--space-8);">🔍</div>
+                    <h3 class="card-title">Discovery</h3>
+                    <p class="card-text">We analyze your current infrastructure, identify vulnerabilities, and
+                        understand your goals.</p>
+                </div>
+
+                <div class="card service-card fade-in delay-200" style="position: relative;">
+                    <div
+                        style="position: absolute; top: var(--space-4); left: var(--space-4); font-size: var(--text-3xl); font-weight: 800; color: var(--color-primary); opacity: 0.3;">
+                        02</div>
+                    <div class="card-icon" style="margin-top: var(--space-8);">📝</div>
+                    <h3 class="card-title">Strategy</h3>
+                    <p class="card-text">We develop a customized plan tailored to your specific needs and budget.</p>
+                </div>
+
+                <div class="card service-card fade-in delay-300" style="position: relative;">
+                    <div
+                        style="position: absolute; top: var(--space-4); left: var(--space-4); font-size: var(--text-3xl); font-weight: 800; color: var(--color-primary); opacity: 0.3;">
+                        03</div>
+                    <div class="card-icon" style="margin-top: var(--space-8);">⚙️</div>
+                    <h3 class="card-title">Implementation</h3>
+                    <p class="card-text">Our team executes the plan with precision, keeping you informed every step of
+                        the way.</p>
+                </div>
+
+                <div class="card service-card fade-in delay-400" style="position: relative;">
+                    <div
+                        style="position: absolute; top: var(--space-4); left: var(--space-4); font-size: var(--text-3xl); font-weight: 800; color: var(--color-primary); opacity: 0.3;">
+                        04</div>
+                    <div class="card-icon" style="margin-top: var(--space-8);">📈</div>
+                    <h3 class="card-title">Optimization</h3>
+                    <p class="card-text">Continuous monitoring, updates, and improvements to stay ahead of threats.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section" style="background: var(--color-bg-secondary);">
+        <div class="container">
+            <div class="cta-section fade-in">
+                <div class="cta-content">
+                    <h2 class="cta-title">Ready to Get <span class="text-gradient">Started</span>?</h2>
+                    <p class="cta-text">Let's discuss your project and find the perfect solution for your business.</p>
+                    <div class="flex justify-center gap-4">
+                        <a href="contact.html" class="btn btn-primary btn-lg">Schedule a Call</a>
+                        <a href="portfolio.html" class="btn btn-secondary btn-lg">View Our Work</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <img src="logo.png" alt="Silent Byte">
+                        <span>Silent<span style="color: var(--color-primary);">Byte</span></span>
+                    </div>
+                    <p class="footer-desc">Protecting your digital future with cutting-edge cybersecurity solutions,
+                        innovative web development, and scalable cloud architecture.</p>
+                    <div class="footer-socials">
+                        <a href="#" aria-label="Twitter">𝕏</a>
+                        <a href="#" aria-label="LinkedIn">in</a>
+                        <a href="#" aria-label="GitHub">⌘</a>
+                        <a href="#" aria-label="Discord">💬</a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="footer-title">Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="#cybersecurity">Cybersecurity</a></li>
+                        <li><a href="#web-development">Web Development</a></li>
+                        <li><a href="#cloud-solutions">Cloud Solutions</a></li>
+                        <li><a href="#ai-ml">AI & ML</a></li>
+                        <li><a href="#consulting">Consulting</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="footer-title">Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="footer-title">Contact</h4>
+                    <ul class="footer-links">
+                        <li>📧 hello@silentbyte.com</li>
+                        <li>📞 +1 (555) 123-4567</li>
+                        <li>📍 San Francisco, CA</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="footer-copyright">© 2026 Silent Byte. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

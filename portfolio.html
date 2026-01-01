@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Silent Byte Portfolio - Explore our successful projects in cybersecurity, web development, and cloud solutions.">
+    <meta name="keywords"
+        content="portfolio, case studies, projects, cybersecurity projects, web development portfolio">
+    <meta name="author" content="Silent Byte">
+
+    <title>Portfolio | Silent Byte</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="logo.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <style>
+        .filter-buttons {
+            display: flex;
+            justify-content: center;
+            gap: var(--space-4);
+            margin-bottom: var(--space-10);
+            flex-wrap: wrap;
+        }
+
+        .filter-btn {
+            padding: var(--space-3) var(--space-6);
+            background: var(--glass-bg);
+            border: 1px solid var(--glass-border);
+            border-radius: var(--radius-full);
+            color: var(--color-text-secondary);
+            font-weight: 500;
+            cursor: pointer;
+            transition: all var(--transition-fast);
+        }
+
+        .filter-btn:hover,
+        .filter-btn.active {
+            background: var(--color-primary);
+            color: var(--color-bg-primary);
+            border-color: var(--color-primary);
+        }
+
+        .portfolio-item {
+            transition: all var(--transition-base);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Loading Screen -->
+    <div class="loader">
+        <div class="loader-spinner"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="navbar-brand">
+                <img src="logo.png" alt="Silent Byte Logo" class="navbar-logo">
+                <span class="navbar-name">Silent<span>Byte</span></span>
+            </a>
+
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="portfolio.html" class="nav-link active">Portfolio</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li><a href="contact.html" class="btn btn-primary btn-sm">Get Started</a></li>
+            </ul>
+
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header">
+        <div class="container">
+            <h1 class="page-title fade-in">Our <span class="text-gradient">Portfolio</span></h1>
+            <div class="page-breadcrumb fade-in">
+                <a href="index.html">Home</a>
+                <span>/</span>
+                <span>Portfolio</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Portfolio Section -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header fade-in">
+                <span class="section-label">Featured Work</span>
+                <h2 class="section-title">Projects That <span class="text-gradient">Define Us</span></h2>
+                <p class="section-desc">Explore our successful implementations across cybersecurity, web development,
+                    and cloud solutions.</p>
+            </div>
+
+            <!-- Filter Buttons -->
+            <div class="filter-buttons fade-in">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="security">Security</button>
+                <button class="filter-btn" data-filter="web">Web Development</button>
+                <button class="filter-btn" data-filter="cloud">Cloud</button>
+                <button class="filter-btn" data-filter="ai">AI & ML</button>
+            </div>
+
+            <!-- Portfolio Grid -->
+            <div class="grid grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <div class="card portfolio-card fade-in delay-100 portfolio-item" data-category="security">
+                    <div
+                        style="width: 100%; height: 100%; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); display: flex; align-items: center; justify-content: center;">
+                        <div style="font-size: 4rem;">🔐</div>
+                    </div>
+                    <div class="portfolio-overlay">
+                        <span class="portfolio-tag">Security</span>
+                        <h3 class="card-title" style="margin-bottom: var(--space-2);">FinSecure Banking Platform</h3>
+                        <p class="card-text" style="font-size: var(--text-sm);">Complete security overhaul for a major
+                            financial institution, reducing vulnerabilities by 95%.</p>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="card portfolio-card fade-in delay-200 portfolio-item" data-category="web">
+                    <div
+                        style="width: 100%; height: 100%; background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); display: flex; align-items: center; justify-content: center;">
+                        <div style="font-size: 4rem;">🛒</div>
+                    </div>
+                    <div class="portfolio-overlay">
+                        <span class="portfolio-tag">Web Development</span>
+                        <h3 class="card-title" style="margin-bottom: var(--space-2);">ShopNow E-commerce</h3>
+                        <p class="card-text" style="font-size: var(--text-sm);">High-performance e-commerce platform
+                            handling 100K+ daily transactions.</p>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="card portfolio-card fade-in delay-300 portfolio-item" data-category="cloud">
+                    <div
+                        style="width: 100%; height: 100%; background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); display: flex; align-items: center; justify-content: center;">
+                        <div style="font-size: 4rem;">☁️</div>
+                    </div>
+                    <div class="portfolio-overlay">
+                        <span class="portfolio-tag">Cloud</span>
+                        <h3 class="card-title" style="margin-bottom: var(--space-2);">CloudScale Migration</h3>
+                        <p class="card-text" style="font-size: var(--text-sm);">Migrated enterprise infrastructure to
+                            AWS, cutting costs by 60%.</p>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="card portfolio-card fade-in delay-100 portfolio-item" data-category="ai">
+                    <div
+                        style="width: 100%; height: 100%; background: linear-gradient(135deg, #fa709a 0%, #fee140 100%); display: flex; align-items: center; justify-content: center;">
+                        <div style="font-size: 4rem;">🤖</div>
+                    </div>
+                    <div class="portfolio-overlay">
+                        <span class="portfolio-tag">AI & ML</span>
+                        <h3 class="card-title" style="margin-bottom: var(--space-2);">ThreatDetect AI</h3>
+                        <p class="card-text" style="font-size: var(--text-sm);">AI-powered threat detection system with
+                            99.7% accuracy rate.</p>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="card portfolio-card fade-in delay-200 portfolio-item" data-category="security">
+                    <div
+                        style="width: 100%; height: 100%; background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%); display: flex; align-items: center; justify-content: center;">
+                        <div style="font-size: 4rem;">🏥</div>
+                    </div>
+                    <div class="portfolio-overlay">
+                        <span class="portfolio-tag">Security</span>
+                        <h3 class="card-title" style="margin-bottom: var(--space-2);">HealthGuard Compliance</h3>
+                        <p class="card-text" style="font-size: var(--text-sm);">HIPAA-compliant security infrastructure
+                            for healthcare network.</p>
+                    </div>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="card portfolio-card fade-in delay-300 portfolio-item" data-category="web">
+                    <div
+                        style="width: 100%; height: 100%; background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%); display: flex; align-items: center; justify-content: center;">
+                        <div style="font-size: 4rem;">📱</div>
+                    </div>
+                    <div class="portfolio-overlay">
+                        <span class="portfolio-tag">Web Development</span>
+                        <h3 class="card-title" style="margin-bottom: var(--space-2);">ConnectHub Platform</h3>
+                        <p class="card-text" style="font-size: var(--text-sm);">Social networking PWA with real-time
+                            messaging and 10M+ users.</p>
+                    </div>
+                </div>
+
+                <!-- Project 7 -->
+                <div class="card portfolio-card fade-in delay-100 portfolio-item" data-category="cloud">
+                    <div
+                        style="width: 100%; height: 100%; background: linear-gradient(135deg, #d299c2 0%, #fef9d7 100%); display: flex; align-items: center; justify-content: center;">
+                        <div style="font-size: 4rem;">🎮</div>
+                    </div>
+                    <div class="portfolio-overlay">
+                        <span class="portfolio-tag">Cloud</span>
+                        <h3 class="card-title" style="margin-bottom: var(--space-2);">GameStream Infrastructure</h3>
+                        <p class="card-text" style="font-size: var(--text-sm);">Scalable gaming infrastructure
+                            supporting 1M+ concurrent players.</p>
+                    </div>
+                </div>
+
+                <!-- Project 8 -->
+                <div class="card portfolio-card fade-in delay-200 portfolio-item" data-category="ai">
+                    <div
+                        style="width: 100%; height: 100%; background: linear-gradient(135deg, #89f7fe 0%, #66a6ff 100%); display: flex; align-items: center; justify-content: center;">
+                        <div style="font-size: 4rem;">💬</div>
+                    </div>
+                    <div class="portfolio-overlay">
+                        <span class="portfolio-tag">AI & ML</span>
+                        <h3 class="card-title" style="margin-bottom: var(--space-2);">SmartSupport Chatbot</h3>
+                        <p class="card-text" style="font-size: var(--text-sm);">NLP-powered customer service bot
+                            reducing support costs by 70%.</p>
+                    </div>
+                </div>
+
+                <!-- Project 9 -->
+                <div class="card portfolio-card fade-in delay-300 portfolio-item" data-category="security">
+                    <div
+                        style="width: 100%; height: 100%; background: linear-gradient(135deg, #a1c4fd 0%, #c2e9fb 100%); display: flex; align-items: center; justify-content: center;">
+                        <div style="font-size: 4rem;">🏢</div>
+                    </div>
+                    <div class="portfolio-overlay">
+                        <span class="portfolio-tag">Security</span>
+                        <h3 class="card-title" style="margin-bottom: var(--space-2);">Enterprise Zero Trust</h3>
+                        <p class="card-text" style="font-size: var(--text-sm);">Zero-trust architecture implementation
+                            for Fortune 500 company.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Case Study Section -->
+    <section class="section" style="background: var(--color-bg-secondary);">
+        <div class="container">
+            <div class="section-header fade-in">
+                <span class="section-label">Featured Case Study</span>
+                <h2 class="section-title">FinSecure <span class="text-gradient">Success Story</span></h2>
+            </div>
+
+            <div class="grid grid-cols-2 gap-8 items-center">
+                <div class="fade-in-left">
+                    <div class="card" style="padding: 0; overflow: hidden; aspect-ratio: 16/10;">
+                        <div
+                            style="width: 100%; height: 100%; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); display: flex; align-items: center; justify-content: center;">
+                            <div style="text-align: center; padding: var(--space-8);">
+                                <div style="font-size: 5rem; margin-bottom: var(--space-4);">🏦</div>
+                                <h3 style="color: white; font-size: var(--text-2xl);">FinSecure Banking</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="fade-in-right">
+                    <h3 style="font-size: var(--text-2xl); margin-bottom: var(--space-4);">Transforming Bank Security
+                    </h3>
+                    <p>FinSecure, a leading regional bank, faced critical security challenges with their legacy systems.
+                        They needed a complete security overhaul to meet regulatory requirements and protect customer
+                        data.</p>
+
+                    <div class="grid grid-cols-3 gap-4" style="margin: var(--space-6) 0;">
+                        <div style="text-align: center;">
+                            <div class="text-gradient" style="font-size: var(--text-3xl); font-weight: 800;">95%</div>
+                            <div style="font-size: var(--text-sm); color: var(--color-text-muted);">Vulnerabilities
+                                Fixed</div>
+                        </div>
+                        <div style="text-align: center;">
+                            <div class="text-gradient" style="font-size: var(--text-3xl); font-weight: 800;">0</div>
+                            <div style="font-size: var(--text-sm); color: var(--color-text-muted);">Breaches Since</div>
+                        </div>
+                        <div style="text-align: center;">
+                            <div class="text-gradient" style="font-size: var(--text-3xl); font-weight: 800;">100%</div>
+                            <div style="font-size: var(--text-sm); color: var(--color-text-muted);">Compliance</div>
+                        </div>
+                    </div>
+
+                    <blockquote
+                        style="border-left: 3px solid var(--color-primary); padding-left: var(--space-4); margin: var(--space-6) 0; font-style: italic;">
+                        "Silent Byte transformed our security posture completely. We now have confidence in our systems
+                        and full regulatory compliance."
+                        <footer style="margin-top: var(--space-2); font-style: normal; color: var(--color-text-muted);">
+                            — James Wilson, CTO at FinSecure</footer>
+                    </blockquote>
+
+                    <a href="contact.html" class="btn btn-primary">Start Your Project</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technologies Section -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header fade-in">
+                <span class="section-label">Our Stack</span>
+                <h2 class="section-title">Technologies We <span class="text-gradient">Master</span></h2>
+            </div>
+
+            <div class="grid grid-cols-4 gap-6">
+                <div class="card service-card fade-in delay-100">
+                    <div class="card-icon">⚛️</div>
+                    <h3 class="card-title">Frontend</h3>
+                    <p class="card-text">React, Vue, Angular, Next.js, TypeScript</p>
+                </div>
+
+                <div class="card service-card fade-in delay-200">
+                    <div class="card-icon">⚙️</div>
+                    <h3 class="card-title">Backend</h3>
+                    <p class="card-text">Node.js, Python, Go, Rust, Java</p>
+                </div>
+
+                <div class="card service-card fade-in delay-300">
+                    <div class="card-icon">☁️</div>
+                    <h3 class="card-title">Cloud</h3>
+                    <p class="card-text">AWS, Azure, GCP, Kubernetes, Docker</p>
+                </div>
+
+                <div class="card service-card fade-in delay-400">
+                    <div class="card-icon">🛡️</div>
+                    <h3 class="card-title">Security</h3>
+                    <p class="card-text">Burp Suite, OWASP, Nessus, Metasploit</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section" style="background: var(--color-bg-secondary);">
+        <div class="container">
+            <div class="cta-section fade-in">
+                <div class="cta-content">
+                    <h2 class="cta-title">Let's Build Something <span class="text-gradient">Amazing</span></h2>
+                    <p class="cta-text">Ready to start your next project? Let's discuss how we can help you achieve your
+                        goals.</p>
+                    <div class="flex justify-center gap-4">
+                        <a href="contact.html" class="btn btn-primary btn-lg">Start a Project</a>
+                        <a href="services.html" class="btn btn-secondary btn-lg">View Services</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <img src="logo.png" alt="Silent Byte">
+                        <span>Silent<span style="color: var(--color-primary);">Byte</span></span>
+                    </div>
+                    <p class="footer-desc">Protecting your digital future with cutting-edge cybersecurity solutions,
+                        innovative web development, and scalable cloud architecture.</p>
+                    <div class="footer-socials">
+                        <a href="#" aria-label="Twitter">𝕏</a>
+                        <a href="#" aria-label="LinkedIn">in</a>
+                        <a href="#" aria-label="GitHub">⌘</a>
+                        <a href="#" aria-label="Discord">💬</a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="footer-title">Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="services.html">Cybersecurity</a></li>
+                        <li><a href="services.html">Web Development</a></li>
+                        <li><a href="services.html">Cloud Solutions</a></li>
+                        <li><a href="services.html">AI & ML</a></li>
+                        <li><a href="services.html">Consulting</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="footer-title">Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="footer-title">Contact</h4>
+                    <ul class="footer-links">
+                        <li>📧 hello@silentbyte.com</li>
+                        <li>📞 +1 (555) 123-4567</li>
+                        <li>📍 San Francisco, CA</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="footer-copyright">© 2026 Silent Byte. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
